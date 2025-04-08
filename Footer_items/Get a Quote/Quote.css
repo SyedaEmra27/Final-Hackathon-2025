@@ -28,6 +28,133 @@ nav {
 
 
 
+
+
+
+/* <==============================heading & paragraph styling(section1)==================> */
+.section1{
+  display: flexbox;
+  
+  color: #fffb05;
+  text-align: center;
+  
+
+}
+.section1 >h1 {
+  font-size: 2vw;
+}
+.section1 >h2 {
+  font-size: 1.9vw;
+
+}
+.section1 >h6 {
+  font-size: 1.5vw;
+}
+.section1 > p{
+  font-style: italic;
+  font-size: 1.1vw;
+}
+/* hover start */
+.section1 :hover{
+transition: all 0.3s ease;
+
+
+}
+
+.section1 > h1:hover {
+font-size: 3.3vw;
+transform: scale(1.05); 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section1 >h2:hover {
+  font-size: 2.6vw;
+
+}
+.section1 > h3:hover {
+font-size: 2.6vw;
+transform: scale(1.05); 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section1 > p:hover {
+font-size: 1.4vw;
+transform: scale(1.05); 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* <==============================heading & paragraph styling(section1) end ==================> */
+
+/* <==============================================Get a Quote styling strat ========================================> */
+
+.quote-form-section {
+  max-width: 700px;
+  margin: auto;
+  color: #fffb05;
+  background-color:rgb(2, 2, 75);
+  padding: 30px;
+  border: 1px solid #fffb05;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 6px rgba(240, 225, 22, 0.1);
+  
+}
+
+.quote-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fffb05;
+  
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #fffb05;
+  border-radius: 5px;
+  background-color:rgb(2, 2, 75);
+}
+
+
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  background-color:#fffb05;
+  color:black;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid  #fffb05;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  color: #fffb05;
+  background-color:black;
+}
+
+/* <==============================================Get a Quote styling End========================================> */
+
+
 /* <================================================= footer styling Start===================================================> */
 .main_footer{
     color: #0d0d0d;
