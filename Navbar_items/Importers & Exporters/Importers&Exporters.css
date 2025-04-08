@@ -1,0 +1,205 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: Shipping;
+    src: url(./font-link/Rubik_Mono_One/RubikMonoOne-Regular.ttf);
+}
+@font-face {
+    font-family: Shipping2;
+    src: url(./font-link/Plaster/Plaster-Regular.ttf);
+}
+body {
+    background-color: black;
+}
+/* <=========================Navbar styling===================> */
+nav {
+    background: radial-gradient(70.30% 560.83% at 98.4% 19.88%, #fffb05 10%, #727058 27%, #b8b8a8 54%, #fffb05 98%);
+}
+/* :hover start */
+.navbar-nav .nav-link:hover {
+    color: black; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: all 0.5s ease;
+}
+
+
+
+/* <================================================= footer styling Start===================================================> */
+.main_footer{
+    color: #0d0d0d;
+    background: radial-gradient(70.30% 560.83% at 98.4% 19.88%, #fffb05 10%, #727058 27%, #b8b8a8 54%, #fffb05 98%);
+
+}
+.footer_section8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer_section8 > div {
+    flex: 1 1 200px; 
+     margin-right: 40px ;
+     margin-left: 0px; 
+    min-width: 200px;
+  }
+  .footer_section8 h5 {
+    margin-top: 0.9vw;
+  }
+.footer_section8 h5, .footer_section8 h6 {
+     font-weight: bold;
+  }
+  .footer_section8 h6 {
+    font-size: 0.9vw;
+  }
+  .p_font{
+    text-align: left;
+  }
+.footer_section8 ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer_section8 li {
+    margin-bottom: 10px;
+  }
+  .footer_section8 img {
+    max-width: 6vw;
+    height: 9vh;
+  } 
+
+   /* hover start */
+   .footer_section8 > div:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+.footer_section8 h5:hover, .footer_section8 h6:hover, .footer_section8 p:hover {
+    transform: scale(1.07);
+    transition: all 0.3s ease;
+}
+
+.footer_section8 img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+
+  }
+  .footer_section8 li:hover , .footer_section8 ul:hover  {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+
+  }
+
+  .last_p{
+    text-align: center;
+    font-weight: bold;
+  }
+  .last_p:hover  {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+  }
+
+   
+    
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .footer_section8 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer_section8 > div {
+      margin: 10px 0;
+    }
+  }  
+.Contact_Us , .About_Us , .footer_Image{
+  text-decoration: none;
+  color: #0d0d0d;
+}
+     
+
+  
+  
+/* <================================================= footer styling End===================================================> */
+/* Back to Top Button */
+.back-to-top {
+  
+  width: 22vw;
+  text-align: center;
+  background-color: #0c078a;
+  color: #f5fd04;
+  text-decoration: none;
+  font-size: 1.2vw;
+  border-radius: 2.5vw;
+  padding: 0.7vw 5vh;
+  font-weight: bolder;
+  margin-left: 20px ;
+  }
+/* Hover effect */
+.back-to-top:hover {
+  color: #fbff04;
+  background-color: #070707;
+  font-size: 1.4vw;
+  border-radius: 3vw;
+  box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
+
+}
+
+
+/* <============================================> */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Individual Colors */
+.facebook { background-color: #1877F2; }
+.linkedin { background-color: #0A66C2; }
+.twitter { background-color: #1DA1F2; }
+.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5); }
+
+/* Hover effect */
+.icon:hover {
+  transform: scale(1.09);
+  transition: all 0.3s ease;
+}
+
+.Get_a_Quote {
+  
+  width: 22vw;
+  background-color: #0c078a;
+  color: #f5fd04;
+  text-decoration: none;
+  font-size: 1.2vw;
+  border-radius: 2.5vw;
+  padding: 0.7vw 5vh;
+  font-weight: bolder;
+  margin-left: 20px ;
+  }
+
+  .Get_a_Quote:hover {
+    color: #fbff04;
+    background-color: #070707;
+    font-size:1.6vw;
+    border-radius: 3vw;
+    box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
+  
+  }
+  

@@ -1,0 +1,686 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+@font-face {
+    font-family: Shipping;
+    src: url(./font-link/Rubik_Mono_One/RubikMonoOne-Regular.ttf);
+}
+@font-face {
+    font-family: Shipping2;
+    src: url(./font-link/Plaster/Plaster-Regular.ttf);
+}
+body {
+    background-color: black;
+}
+/* <=========================Navbar styling===================> */
+nav {
+    background: radial-gradient(70.30% 560.83% at 98.4% 19.88%, #fffb05 10%, #727058 27%, #b8b8a8 54%, #fffb05 98%);
+}
+/* :hover start */
+.navbar-nav .nav-link:hover {
+    color: black; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: all 0.5s ease;
+}
+
+
+/* <===============bootstrap carousel styling==================> */
+.carouselH1 {
+    font-family: Shipping;
+    color: #fffb05;
+    font-size: 3.7vw;
+}
+
+/* <==============================heading & paragraph styling(section1)==================> */
+.section1{
+    
+    color: #fffb05;
+    text-align: center;
+}
+.section1 >h1 {
+    font-size: 3.4vw;
+}
+.section1 > p{
+    font-style: italic;
+    font-size: 1.7vw;
+}
+   
+/* :hover start */
+.section1:hover h1 {
+    font-size: 4vw; 
+    color: #fffb05; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.section1:hover p {
+    font-size: 2vw;
+    color: #fffb05;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+/* <==================================Card section================================> */
+
+.card-group{
+    border: 1px  solid #fffb05;
+
+}
+.card{
+    border: 1px  solid #fffb05;
+}
+
+
+
+
+
+
+/* <====================================================Heading  & Paragraph Styling Start================================> */
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:4vw ;
+}
+
+.section2 >div >h1 {
+    font-size: 3vw;
+
+    color: #fffb05;
+    width: 35vw;
+    
+}
+.section2 >div >p {
+ color: #fffb05;
+ width: 35vw;
+ font-size: 1.3vw;
+ font-style: italic;
+ text-align: justify;
+ 
+ }
+ .section2 >div > h1>  p  {
+    color: #fffb05;
+    width: 35vw;
+    font-size: 1.3vw;
+    font-style: italic;
+    text-align: justify;    
+    }
+
+    .section2 >div > h1> h3  {
+        color: #fffb05;
+        width: 35vw;
+        font-size: 1.3vw;
+        font-style: italic;
+        
+        }
+.section2 >div  >img {
+    width: 59.5vw;
+    height: 84vh;
+    padding-left: 6vw;
+    padding-right: 1vw;
+}
+/* :hover start */
+ .section2 > div > h1:hover {
+        font-size: 3.3vw;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .section2 > div > p:hover {
+        font-size: 1.4vw;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+     
+      .section2 > div > img:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+
+
+/* media queries start */
+
+@media only screen and (max-width: 997px) {
+    .section2{
+        flex-direction: column;
+        }
+        .section2 >div  >img{
+            margin: 0%;
+            padding: 0%;
+        }
+  }  
+@media only screen and (max-width: 768px) {
+    .section2{
+        flex-direction: column;
+        }
+        .section2 >div  >img{
+            margin: 0%;
+            padding: 0%;
+        }
+  }  
+ @media only screen and (max-width: 690px) {
+    .section2{
+        flex-direction: column;
+        }
+        .section2 >div  >img{
+            margin: 0%;
+            padding: 0%;        }
+    
+  }    
+@media only screen and (max-width: 500px) {
+    .section2{
+        flex-direction: column;
+        }
+        .section2 >div  >img{
+            margin: 0%;
+            padding: 0%;
+       }
+}
+@media only screen and (max-width: 480px) {
+    .section2{
+    flex-direction: column;
+    }
+   
+    .section2 >div  >img {
+
+      width: 100%;
+    }
+  }
+  
+   /* <====================================================Heading  & Paragraph Styling End================================> */
+
+
+/* <==============================heading & paragraph styling(section3)==================> */
+.section3{
+  display: flexbox;
+  
+  color: #fffb05;
+  text-align: center;
+  
+
+}
+.section3 >h1 {
+  font-size: 3vw;
+}
+.section3 >h3 {
+  font-size: 2.5vw;
+}
+.section3 > p{
+  font-style: italic;
+  font-size: 1.3vw;
+}
+/* hover start */
+.section3 :hover{
+transition: all 0.3s ease;
+
+
+}
+
+.section3 > h1:hover {
+font-size: 3.3vw;
+transform: scale(1.05); 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section3 > h3:hover {
+font-size: 2.8vw;
+transform: scale(1.05); 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section3 > p:hover {
+font-size: 1.4vw;
+transform: scale(1.05); 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* <================================================================ 12 cards with images start=====================>  */
+
+/* hover start */
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); 
+        transition: all 0.5s ease;
+      }
+      .card:hover .card-body h5 {
+        font-size: 1.4rem;
+        transition: all 0.3s ease;
+       }
+
+
+
+/* <================================================================ 12 cards with images start=====================>  */
+
+
+/* <==============================Images  heading & paragraph styling(section4)==================> */
+
+
+.section4 > div > img {
+  position: absolute;
+  width: 98.5vw;
+  height: 85.5vh;
+  z-index: -1;
+
+  
+}
+.section4 >  div > h1  {
+    text-align: center;
+    color: rgb(5, 5, 95); 
+    font-family: Shipping2;
+  
+}
+.section4 >  div > p  {
+    text-align: center;
+    color: rgb(11, 11, 12); 
+    font-family:Shipping ;
+    font-size: 1.5vw;
+}
+      
+      /* Hover start */
+      
+    
+      .section4 > div:hover > h1 {
+        font-size: 2rem;
+        color: rgb(5, 5, 95);
+        transition: all 0.5s ease
+      }
+      
+      .section4 > div:hover > p {
+        font-size: 1.7vw; 
+        color: rgb(11, 11, 12);
+        transition:all  0.5s ease
+      }
+@media only screen and (max-width: 966px)  {
+
+    .section4 >  div > img {
+        width: 98.2vw;
+    }
+
+}
+@media only screen and  (max-width: 808px) {
+
+    .section4 >  div > img {
+        width: 98vw;
+    }
+
+}
+@media only screen and (max-width: 725px) {
+
+    .section4 >  div > img {
+        width: 97.2vw;
+    }
+
+}
+@media only screen and (max-width: 518px) {
+    .section4 >  div > img {
+        width: 96.2vw;
+       }
+    }
+
+
+     /* <================================shipping List styling section5 start=============================================>  */
+     .section5_Heading{
+      color: #fffb05;
+      text-align: center;
+      font-family: Shipping2;
+    
+    }     
+     .section5{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 20px;
+        color: #fffb05;
+        
+       
+      }
+      
+      .headline {
+        font-weight: bold;
+      }      
+      
+      .section5 >div {
+        
+        margin: 20px 25px 25px 0px;
+        padding: 0px 11px 11px 0px; 
+        
+      }
+      .section5 >div > ul >li {
+        list-style:square;
+        font-size: 1vw;
+      }
+      
+      /* hover start */
+      .section5 > div > ul > li:hover {
+        font-size: 1.2vw;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.5s ease;
+      }
+      
+
+.section5_Heading:hover {
+  font-size: 2.6vw;
+   transition: all 0.5s ease  ; 
+ transform: scale(1.05);
+
+}
+ .section5 > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+    /* <================================shipping List styling  section5 End=============================================>  */
+
+/* <============================================Image Heading Paragraph  styling section 6 start ================================================================================> */
+
+
+.section6 > div > img {
+    
+    width: 98.5vw;
+    height: 85.5vh;
+    
+  
+    
+  }
+  .section6 > div > h1  {
+      text-align: center;
+      color:#fffb05; 
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  .section6 > div>  p  {
+      text-align: center;
+      color:#fffb05; 
+     font-style: italic;
+     font-size: 1.5vw;
+  }
+  /* hover start*/
+    .section6 > div > h1:hover {
+        font-size: 3.5vw;
+        transition: all 0.3s ease;
+      }
+            .section6 > div > p:hover {
+        font-size: 1.7vw;
+        transition: all 0.3s ease;
+      }
+  @media only screen and (max-width: 966px)  {
+  
+      .section6 >  div > img {
+          width: 98.2vw;
+      }
+  
+  }
+  @media only screen and  (max-width: 808px) {
+  
+      .section6 >  div > img {
+          width: 98vw;
+      }
+  
+  }
+  @media only screen and (max-width: 725px) {
+  
+      .section6 >  div > img {
+          width: 97.2vw;
+      }
+  
+  }
+  @media only screen and (max-width: 518px) {
+      .section6 >  div > img {
+          width: 96.2vw;
+         }
+      }
+
+      /* <============================================Image Heading Paragraph section 6 End ================================================================================> */
+
+      
+      /* <============================================Image START================================================================================> */
+    
+      .section7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        width: 100%;
+        height: 70vh;
+    
+      }
+  
+      .section7 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 30px;
+      }
+      
+      .section7 img:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out  ; 
+        border-radius: 50%;
+        box-shadow: 0 4px 20px rgb(237, 229, 87);
+        
+        
+        
+      }
+
+      /* Responsive tweaks */
+      @media (max-width: 768px) {
+        .section7 {
+          flex-direction: column;
+          height: auto;
+          padding: 20px;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .section7 {
+          padding: 20px;
+        }
+  
+        .section7 img {
+          width: 100%;
+        }
+      }
+  
+                                        
+      /* <============================================Image End================================================================================> */
+
+/* <================================================= footer styling Start===================================================> */
+.main_footer{
+    color: #0d0d0d;
+    background: radial-gradient(70.30% 560.83% at 98.4% 19.88%, #fffb05 10%, #727058 27%, #b8b8a8 54%, #fffb05 98%);
+
+}
+.footer_section8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer_section8 > div {
+    flex: 1 1 200px; 
+     margin-right: 40px ;
+     margin-left: 0px; 
+    min-width: 200px;
+  }
+  .footer_section8 h5 {
+    margin-top: 0.9vw;
+  }
+.footer_section8 h5, .footer_section8 h6 {
+     font-weight: bold;
+  }
+  .footer_section8 h6 {
+    font-size: 0.9vw;
+  }
+  .p_font{
+    text-align: left;
+  }
+.footer_section8 ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer_section8 li {
+    margin-bottom: 10px;
+  }
+  .footer_section8 img {
+    max-width: 6vw;
+    height: 9vh;
+  } 
+
+   /* hover start */
+   .footer_section8 > div:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+.footer_section8 h5:hover, .footer_section8 h6:hover, .footer_section8 p:hover {
+    transform: scale(1.07);
+    transition: all 0.3s ease;
+}
+
+.footer_section8 img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+
+  }
+  .footer_section8 li:hover , .footer_section8 ul:hover  {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+
+  }
+
+  .last_p{
+    text-align: center;
+    font-weight: bold;
+  }
+  .last_p:hover  {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+  }
+
+   
+    
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .footer_section8 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer_section8 > div {
+      margin: 10px 0;
+    }
+  }  
+.Contact_Us , .About_Us , .footer_Image{
+  text-decoration: none;
+  color: #0d0d0d;
+}
+     
+
+  
+  
+/* <================================================= footer styling End===================================================> */
+/* Back to Top Button */
+.back-to-top {
+  
+  width: 22vw;
+  text-align: center;
+  background-color: #0c078a;
+  color: #f5fd04;
+  text-decoration: none;
+  font-size: 1.2vw;
+  border-radius: 2.5vw;
+  padding: 0.7vw 5vh;
+  font-weight: bolder;
+  margin-left: 20px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+/* Hover effect */
+.back-to-top:hover {
+  color: #fbff04;
+  background-color: #070707;
+  font-size: 1.4vw;
+  border-radius: 3vw;
+  box-shadow: 0 4px 6px rgba(109, 111, 112, 0.4);
+
+}
+
+
+/* <============================================> */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+/* Individual Colors */
+.facebook { background-color: #1877F2; }
+.linkedin { background-color: #0A66C2; }
+.twitter { background-color: #1DA1F2; }
+.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5); }
+.whatsapp{background-color: #25D366; }
+
+
+
+.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+/* Hover effect */
+.icon:hover {
+  transform: scale(1.15);
+  transition: all 0.3s ease;
+}
+
+.Get_a_Quote {
+  
+  width: 22vw;
+  background-color: #0c078a;
+  color: #f5fd04;
+  text-decoration: none;
+  font-size: 1.2vw;
+  border-radius: 2.5vw;
+  padding: 0.7vw 5vh;
+  font-weight: bolder;
+  margin-left: 20px ;
+  }
+
+  .Get_a_Quote:hover {
+    color: #fbff04;
+    background-color: #070707;
+    font-size:1.6vw;
+    border-radius: 3vw;
+    box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
+  
+  }
