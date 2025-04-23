@@ -89,7 +89,7 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 
 /* <==============================================Get a Quote styling strat ========================================> */
 
-.quote-form-section {
+.quote-form-section2 {
   max-width: 700px;
   margin: auto;
   color: #fffb05;
@@ -125,13 +125,19 @@ label {
   
 }
 
-input, textarea {
+input, textarea  {
   padding: 10px;
   border: 1px solid #fffb05;
   border-radius: 5px;
   background-color:rgb(2, 2, 75);
 }
-
+.select-box {
+  padding: 10px;
+  border: 1px solid #fffb05;
+  border-radius: 5px;
+  background-color:rgb(2, 2, 75);
+  color: #f5fd04;
+}
 
 
 .submit-btn {
@@ -147,6 +153,9 @@ input, textarea {
   cursor: pointer;
 }
 
+span{
+  color: rgb(226, 8, 8);
+}
 .submit-btn:hover {
   color: #fffb05;
   background-color:black;

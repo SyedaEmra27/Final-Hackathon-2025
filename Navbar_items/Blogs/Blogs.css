@@ -14,8 +14,9 @@ body {
     background-color: black;
 }
 /* <=========================Navbar styling===================> */
+
 nav {
-    background: radial-gradient(70.30% 560.83% at 98.4% 19.88%, #fffb05 10%, #727058 27%, #b8b8a8 54%, #fffb05 98%);
+   background-color: rgb(201, 201, 25);
 }
 /* :hover start */
 .navbar-nav .nav-link:hover {
@@ -26,6 +27,74 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
     transition: all 0.5s ease;
 }
+
+/* <==========================================================colums statrt styling =============> */
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: lightblue;
+}
+
+/* <==============================================Blog styling start============================> */
+h1{
+  background-color: black;  
+   color:  #fffb05;
+   text-align: center;
+   font-size: 5vw;
+   font-family: Shipping2;
+
+}
+/* <==============================================Blog styling End============================> */
+/* <========================================   QUOTE Styling start ==============================> */
+
+
+.quote_div {
+  background-color: #8b8a7f;
+  width: 1000px;
+  text-align: left;
+  margin: 0 12vw;
+  border-radius: 30px;
+
+
+
+}
+.quote_div2{
+
+
+}
+.quote_div2 > p {
+  font-size: 3vw;
+  color: #070707;
+  margin: 0 5vw;
+
+
+}
+/* <========================================   QUOTE Styling End==============================> */
+ .rounded_heading{
+  font-size: 3vw;
+  text-align: left;
+  margin-left: 3vw;
+  font-family: Shipping2;
+  text-decoration: underline;
+ }
+
+.rounded_img {
+  float: left;
+  clip-path: circle(40%);
+  shape-outside: circle(45%);
+ 
+}
+.rounded_div_img {
+  width: 95vw;
+  padding: 30px;
+  font-size: 1.9vw;
+  color:#f5fd04;
+  font-style: italic;
+
+}
+
 
 
 

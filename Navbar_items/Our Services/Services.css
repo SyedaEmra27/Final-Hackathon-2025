@@ -27,6 +27,62 @@ nav {
     transition: all 0.5s ease;
 }
 
+  /* <===================================== Services Section  styling Start =============================================> */
+#ourServices {
+  
+}
+
+
+
+/* <====================================================Heading  & Paragraph Styling Start================================> */
+h1{
+  background-color: black;  
+   color:  #fffb05;
+   text-align: center;
+   font-size: 3.4vw;
+   font-family: Shipping2;
+
+}
+.main{
+  display: flex;
+  
+}
+
+.main_para{
+  background-color: black;  
+   color:  #fffb05;
+   text-align: start;
+   width: 70vw; 
+   height: 50vh;
+   font-family: Shipping2;
+   padding: 10px 10px 10px 10px;
+   font-style: italic;
+   font-size: 1.7vw;
+
+
+}
+div> ol > li {
+  background-color: #000000 !important; 
+  color:  #fffb05 !important;
+   border: none !important;
+   text-align: center;
+   font-size: 1.3vw;
+  }
+  div> ol > li >a{
+    text-decoration: none ;
+    color:  #fffb05;
+  }
+  a:hover {
+    text-decoration: underline !important;
+  }
+  div > ol{
+
+  }
+  
+
+
+
+ /* <====================================================Heading  & Paragraph Styling End================================> */
 
 
 /* <================================================= footer styling Start===================================================> */
