@@ -28,6 +28,28 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
     transition: all 0.5s ease;
 }
+ /*navbar button styling export to Pakistan */
+ #nav_btn_export{
+  width: 12vw;
+  background-color: #0c078a;
+  color: #f5fd04;
+  text-decoration: none;
+  font-size: 14px;
+  /* border-radius: 2.5vw; */
+  margin: 0 10px;
+  padding: 2px 5px;
+  font-weight: bolder;
+ 
+  }
+
+  #nav_btn_export:hover{
+    color: #fbff04;
+    background-color: #070707;
+    width: 13vw;
+    font-size:14px;
+    box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
+  
+  }
 
 
 /* <===============bootstrap carousel styling==================> */
@@ -352,8 +374,9 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
        
       }
       
-      .headline {
-        font-weight: bold;
+.headline {
+        
+      font-style: bold;
       }      
       
       .section5 >div {
@@ -364,12 +387,12 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
       }
       .section5 >div > ul >li {
         list-style:square;
-        font-size: 1vw;
+        font-size: 1.5vw;
       }
       
       /* hover start */
       .section5 > div > ul > li:hover {
-        font-size: 1.2vw;
+        font-size: 1.9vw;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         transition: all 0.5s ease;
       }
@@ -518,7 +541,7 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 .footer_section8 > div {
     flex: 1 1 200px; 
-     margin-right: 40px ;
+     margin-right: 20px ;
      margin-left: 0px; 
     min-width: 200px;
   }
@@ -534,13 +557,13 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   .p_font{
     text-align: left;
   }
-.footer_section8 ul {
+/* .footer_section8 ul {
     list-style: none;
     padding: 0;
   }
   .footer_section8 li {
     margin-bottom: 10px;
-  }
+  } */
   .footer_section8 img {
     max-width: 6vw;
     height: 9vh;
@@ -602,17 +625,20 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 /* <================================================= footer styling End===================================================> */
 /* Back to Top Button */
 .back-to-top {
+
   
   width: 22vw;
-  text-align: center;
+  text-align: right;
   background-color: #0c078a;
   color: #f5fd04;
   text-decoration: none;
   font-size: 1.2vw;
-  border-radius: 2.5vw;
+  border-radius: 40vw;
+ 
   padding: 0.7vw 5vh;
   font-weight: bolder;
-  margin-left: 20px ;
+
+ 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 /* Hover effect */
@@ -620,7 +646,7 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   color: #fbff04;
   background-color: #070707;
   font-size: 1.4vw;
-  border-radius: 3vw;
+  border-radius: 10vw;
   box-shadow: 0 4px 6px rgba(109, 111, 112, 0.4);
 
 }
@@ -673,16 +699,17 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   font-size: 1.2vw;
   border-radius: 2.5vw;
-  padding: 0.7vw 5vh;
+  padding: 0.7vw 4vh;
   font-weight: bolder;
+
   margin-left: 20px ;
   }
 
   .Get_a_Quote:hover {
     color: #fbff04;
     background-color: #070707;
-    font-size:1.6vw;
-    border-radius: 3vw;
+    font-size:1.4vw;
+    border-radius: 2.8vw;
     box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
   
   }

@@ -30,11 +30,14 @@ nav {
 
 /* <==========================================================colums statrt styling =============> */
 .newspaper {
+  font-size: 1.5vw;
+  color:  #fffb05;
   column-count: 3;
   column-gap: 40px;
   column-rule-style: solid;
   column-rule-width: 1px;
-  column-rule-color: lightblue;
+  column-rule-color: #fffb05;
+  margin: 0vh 2vw;
 }
 
 /* <==============================================Blog styling start============================> */
