@@ -16,6 +16,8 @@
 
     <!-- <========================Icon=================================================> -->
     <link rel="Icon" href="../../images/globe icon.jpg">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
   </head>
 
 
@@ -77,10 +79,10 @@
 <!-- <=============================================Get a Quote ==========================================> -->
 <br><br>
 <section class="quote-form-section2">
-  <form class="quote-form" action="#" method="POST">
+ 
     <div class="form-group">
-      <label for="name">Full Name <span>*</span></label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" >
+      <label  for="name">Full Name <span>*</span></label>
+      <input  type="text" id="name" name="name" placeholder="Enter your full name" >
     </div>
 
     <div class="form-group">
@@ -353,7 +355,7 @@
 
     <div class="form-group">
       <label for="datetime">Date of the shipment<span>*</span></label>
-      <input type="date" id="cargo" name="date" placeholder="mm/dd/yyyy" >
+      <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" >
       
       
     </div>
@@ -363,15 +365,18 @@
       <input type="number" id="weight" name="weight" placeholder="Approximate weight" >
     </div>
     
+    
 
     <div class="form-group full-width">
       <label for="message">Additional Details<span>*</span></label>
       <textarea id="message" name="message" rows="4" placeholder="Any special instructions?"></textarea>
     </div>
 
-    <button type="submit" class="submit-btn">Request Quote</button>
+    <button onclick="submit_btn()" type="submit" class="submit-btn">Request Quote</button>
     
-  </form>
+
+    
+ 
 </section>
 
 
@@ -383,85 +388,114 @@
   <h2>
     Frequently Asked Questions - How to use our shipping quote form? </h2> </section>
 
-
+   
 <!-- <===========================================footer (section 8) Start=============================================> -->
-<footer >
-  <br><br><br>
+<footer>
+  <br><br><br><br>
   <div class="main_footer">
-
-  
-  <div class="footer_section8">
- 
-   <div>
-    <h6> <a class="footer_Image" href="../../index.html"><img src="./images/yellow_logo.jpg" alt=""> MACCA Freight System</a>
-  </h6>
-  
-  <p class="p_font">MACCA Freight System is a global freight forwarding company offering end-to-end solutions backed by technology and expertise, including Transportation Services,  Contract Logistics, Customs Clearance,  Project Logistics and Fine Arts Logistics.</p>
- 
-   </div>
-   <div>
-    <h5><a  class="About_Us" href="../About Us/about.html">About Us</a></h5>
-    <ul>
-      <li>hyuygsgjah</li>
-      <li>hyuygsgjah</li>
-      <li>hyuygsgjah</li>
-      <li>hyuygsgjah</li>
-      <li>hyuygsgjah</li>
-    </ul>
-   </div>
-   <div>
-    <h5><a  class="Contact_Us" href="../Contact Us/Contact.html">Contact Us</a></h5>
-    <br>
-    
-   
-   </div>
-   <div>
-    <br>
-    <a href="../Get a Quote/Quote.html" class="Get_a_Quote">Get a Quote </a><br>
-   </div>
-   <div>
-    <h5>Social Links</h5>
-    <br>
-        <div class="social-icons">
-        <a href="https://facebook.com/YourPage" target="_blank" class="icon facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://linkedin.com/in/YourPage" target="_blank" class="icon linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://twitter.com/YourPage" target="_blank" class="icon twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://instagram.com/YourPage" target="_blank" class="icon instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
+    <div class="footer_section8">
+      <div>
+        <h6>
+          <a class="footer_Image" href="../../index.html">
+            <img src="./images/logo2.png" alt=""> MACCA Freight System
+          </a>
+        </h6>
+        <p class="p_font">
+          MACCA Freight System is a global freight forwarding company offering end-to-end solutions backed by technology and expertise.
+        </p>
       </div>
-      
-     
-    
-   </div>
-   
-  </div>
-  <br><br>    <a href="#top" class="back-to-top">Back to Top</a><br>
-  <p class="last_p" > © 2025 freight Logistics. All rights reserved.
-    
-  </p>
 
-</div>
+      <div>
+        <h5><a class="About_Us" href="../Footer_items/About Us/about.html">About Us</a></h5>
+      </div>
+
+      <div>
+        <h5><a class="Contact_Us" href="../Footer_items/Contact Us/Contact.html">Contact Us</a></h5>
+      </div>
+
+      <div>
+        <a href="../Footer_items/Get a Quote/Quote.html" class="Get_a_Quote">Get a Quote</a>
+      </div>
+
+      <div>
+        <h5>Social Links</h5>
+        <div class="social-icons">
+          <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <p class="last_p">© 2025 Freight Logistics. All rights reserved.</p>
+  </div>
 </footer>
 
 
 
 
+
+  
+<script>
+       
+  const firebaseConfig = {
+  apiKey: "AIzaSyC_yop7fJf7rdq8sXUsH6bJeqC8C5VlKxw",
+  authDomain: "clientwebsite-e112f.firebaseapp.com",
+  databaseURL: "https://clientwebsite-e112f-default-rtdb.firebaseio.com",
+  projectId: "clientwebsite-e112f",
+  storageBucket: "clientwebsite-e112f.firebasestorage.app",
+  messagingSenderId: "910564803551",
+  appId: "1:910564803551:web:504b0014415ace88a0fa6a"
+};
+
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+  function submit_btn(){
+    var name =document.getElementById("name")
+    var email =document.getElementById("email")
+    var phone =document.getElementById("phone")
+    var cnic =document.getElementById("cnic")
+    var destination =document.getElementById("destination")
+    var origin =document.getElementById("origin")
+    var cargo =document.getElementById("cargo")
+    var date =document.getElementById("date")
+    var weight =document.getElementById("weight")
+    var objInfo={
+      name:name.value,
+      email:email.value,
+      phone:phone.value,
+      cnic:cnic.value,
+      destination:destination.value,
+      origin:origin.value,
+      cargo:cargo.value,
+      date:date.value,
+      weight:weight.value,
+    }
+    firebase.database().ref('username').push(objInfo);
+  }
+  
+  function submit_btn() {
+      Swal.fire({
+        title: "Request Submitted",
+        text: "Thanks for Your Valuable Request Quote!",
+        icon: "success",
+      });
+      
+     
+    }
   
 
-</body>
-</html>
+</script>
+
 
 
  <!-- <===========================================footer (section 7) End=============================================> -->
  
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
 

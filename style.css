@@ -16,8 +16,8 @@ body {
 }
 /* <=========================Navbar styling===================> */
 nav {
-    background: radial-gradient(70.30% 560.83% at 98.4% 19.88%, #fffb05 10%, #727058 27%, #b8b8a8 54%, #fffb05 98%);
-    box-shadow: inset 0 2px 10px rgb(117, 117, 1);
+  background: linear-gradient(135deg, #fff700 0%, #ffe135 50%, #ffdb58 100%);
+  box-shadow: inset 0 6px 20px rgba(46, 46, 40, 0.2);
 }
 /* :hover start */
 .navbar-nav .nav-link:hover {
@@ -58,6 +58,28 @@ nav {
     color: #fffb05;
     font-size: 3.7vw;
 }
+/* <!-- <================================== feedback button styling start ====================================================> --> */
+
+.feedback_btn {
+  width: 40px;
+  height: 120px;
+  position: absolute;
+  right: 10px; 
+  top: 680px;
+  transition: transform 0.3s ease;
+
+
+}
+.feedback_btn:hover{
+ 
+  transform: scale(1.1);
+
+}
+
+
+
+
+/* <!-- <================================== feedback button styling start ====================================================> --> */
 
 /* <==============================heading & paragraph styling(section1)==================> */
 .section1{
@@ -72,22 +94,24 @@ nav {
     font-style: italic;
     font-size: 1.7vw;
 }
-   
-/* :hover start */
-.section1:hover h1 {
-    font-size: 4vw; 
-    color: #fffb05; 
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
+.readmore{
+  text-align: center;   text-align: right;
+            background-color: #0c078a;
+            color: #f5fd04;
+            text-decoration: none;
+            font-size: 1.2vw;
+            border-radius: 50vw;
+            font-weight: bolder;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 0.7vw 5vh;
+}   
+.readmore:hover {
+  color: #fbff04;
+  background-color: #070707;
+  font-size: 1.4vw;
+  border-radius: 10vw;
+  box-shadow: 0 4px 6px rgba(109, 111, 112, 0.4);
 
-.section1:hover p {
-    font-size: 2vw;
-    color: #fffb05;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
-    cursor: pointer;
 }
 
 
@@ -107,7 +131,7 @@ nav {
 
 
 
-/* <====================================================Heading  & Paragraph Styling Start================================> */
+/* <====================================================Heading  & Paragraph Styling Start===========section 2=====================> */
 .section2{
     display: flex;
     flex-wrap: wrap;
@@ -150,27 +174,6 @@ nav {
     padding-left: 6vw;
     padding-right: 1vw;
 }
-/* :hover start */
- .section2 > div > h1:hover {
-        font-size: 3.3vw;
-        transform: scale(1.05);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-      }
-
-      .section2 > div > p:hover {
-        font-size: 1.4vw;
-        transform: scale(1.05);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-      }
-
-     
-      .section2 > div > img:hover {
-        transform: scale(1.05);
-        transition: all 0.3s ease;
-      }
-
 
 /* media queries start */
 
@@ -222,7 +225,38 @@ nav {
   }
   
    /* <====================================================Heading  & Paragraph Styling End================================> */
+/* <!-- <=======================================================weight functionality section 2 (a) ===========================start==============> */
+.container_weight {
+  background-color: #0f1785; /* Bright Yellow */
+  color: #faf7f7; /* Black Text */
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
 
+.container_weight > h2 {
+  margin-bottom: 20px;
+}
+
+.weight_input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+#poundResult ,#ounceResult{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* <!-- <=======================================================weight functionality section 2 (a) ===========================start==============> */
 
 /* <==============================heading & paragraph styling(section3)==================> */
 .section3{
@@ -243,33 +277,7 @@ nav {
   font-style: italic;
   font-size: 1.3vw;
 }
-/* hover start */
-.section3 :hover{
-transition: all 0.3s ease;
 
-
-}
-
-.section3 > h1:hover {
-font-size: 3.3vw;
-transform: scale(1.05); 
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section3 > h3:hover {
-font-size: 2.8vw;
-transform: scale(1.05); 
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section3 > p:hover {
-font-size: 1.4vw;
-transform: scale(1.05); 
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 
 /* <================================================================ 12 cards with images Styling start=====================>  */
@@ -391,22 +399,13 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
       }
       
       /* hover start */
-      .section5 > div > ul > li:hover {
-        font-size: 1.9vw;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        transition: all 0.5s ease;
-      }
       
-
+ 
 .section5_Heading:hover {
   font-size: 2.6vw;
-   transition: all 0.5s ease  ; 
+   transition:  0.5s ease  ; 
  transform: scale(1.05);
 
-}
- .section5 > div:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -417,14 +416,43 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 /* <============================================Image Heading Paragraph  styling section 6 start ================================================================================> */
 
 
+ 
 .section6 > div > img {
-    
-    width: 98.5vw;
-    height: 85.5vh;
-    
-  
-    
+  width: 100%;
+  height: auto;
+  max-width: 120vw;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+
+
+/* Media queries for fine-tuning */
+
+@media (max-width: 1024px) {
+  .section6 > div > img {
+    height: auto;
   }
+}
+
+@media (max-width: 768px) {
+  .section6 > div > img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .section6 {
+    padding: 10px;
+  }
+  .section6 > div > img {
+    width: 100%;
+    height: auto;
+  }
+}  
+  
+
   .section6 > div > h1  {
       text-align: center;
       color:#fffb05; 
@@ -437,43 +465,8 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
      font-style: italic;
      font-size: 1.5vw;
   }
-  /* hover start*/
-    .section6 > div > h1:hover {
-        font-size: 3.5vw;
-        transition: all 0.3s ease;
-      }
-            .section6 > div > p:hover {
-        font-size: 1.7vw;
-        transition: all 0.3s ease;
-      }
-  @media only screen and (max-width: 966px)  {
-  
-      .section6 >  div > img {
-          width: 98.2vw;
-      }
-  
-  }
-  @media only screen and  (max-width: 808px) {
-  
-      .section6 >  div > img {
-          width: 98vw;
-      }
-  
-  }
-  @media only screen and (max-width: 725px) {
-  
-      .section6 >  div > img {
-          width: 97.2vw;
-      }
-  
-  }
-  @media only screen and (max-width: 518px) {
-      .section6 >  div > img {
-          width: 96.2vw;
-         }
-      }
 
-      /* <============================================Image Heading Paragraph section 6 End ================================================================================> */
+      /* <============================================Image Heading Paragraph section 6 End ================================================================================> */ */
 
       
       /* <============================================Image START================================================================================> */
@@ -504,7 +497,7 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         
       }
 
-      /* Responsive tweaks */
+      /* Responsive  */
       @media (max-width: 768px) {
         .section7 {
           flex-direction: column;
@@ -525,191 +518,159 @@ transition: font-size 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   
                                         
       /* <============================================Image End================================================================================> */
-
-/* <================================================= footer styling Start===================================================> */
-.main_footer{
-    color: #0d0d0d;
-    background: radial-gradient(70.30% 560.83% at 98.4% 19.88%, #fffb05 10%, #727058 27%, #b8b8a8 54%, #fffb05 98%);
-    box-shadow: inset 0 6px 20px rgb(46, 46, 40);
-
+      .main_footer {
+       
+        color: #0d0d0d;
+        background: linear-gradient(135deg, #fff700 0%, #ffe135 50%, #ffdb58 100%);
+        box-shadow: inset 0 6px 20px rgba(46, 46, 40, 0.2);
+       
+        width: 100%;         /* Take full viewport width */
+        margin: 0;            /* Remove any margin */
+        padding: 40px 0;      /* Remove horizontal padding, keep vertical */
+        box-sizing: border-box;
+      }
+      
+      .footer_section8 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+        text-align: center;
+      }
+      
+      .footer_section8 > div {
+        flex: 1 1 200px;
+        /* max-width: 240px; */
+      }
+      
+      .footer_section8 img {
+        max-width: 60px;
+      }
+      
+      .p_font {
+        text-align: left;
+      }
+      
+      .footer_section8 h5,
+      .footer_section8 h6 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .Contact_Us, .About_Us, .footer_Image {
+        text-decoration: none;
+        color: #0d0d0d;
+    }
+    /* Hover effects */
+.footer_section8 > div:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
-.footer_section8 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}
-.footer_section8 > div {
-    flex: 1 1 200px; 
-     margin-right: 20px ;
-     margin-left: 0px; 
-    min-width: 200px;
-  }
-  .footer_section8 h5 {
-    margin-top: 0.9vw;
-  }
-.footer_section8 h5, .footer_section8 h6 {
-     font-weight: bold;
-  }
-  .footer_section8 h6 {
-    font-size: 0.9vw;
-  }
-  .p_font{
-    text-align: left;
-  }
-/* .footer_section8 ul {
-    list-style: none;
-    padding: 0;
-  }
-  .footer_section8 li {
-    margin-bottom: 10px;
-  } */
-  .footer_section8 img {
-    max-width: 6vw;
-    height: 9vh;
-  } 
-
-   /* hover start */
-   .footer_section8 > div:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-  }
 .footer_section8 h5:hover, .footer_section8 h6:hover, .footer_section8 p:hover {
-    transform: scale(1.07);
-    transition: all 0.3s ease;
+  transform: scale(1.07);
+  transition: all 0.3s ease;
 }
-
 .footer_section8 img:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-
-  }
-  .footer_section8 li:hover , .footer_section8 ul:hover  {
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-
-  }
-
-  .last_p{
-    text-align: center;
-    font-weight: bold;
-  }
-  .last_p:hover  {
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-
-  }
-
-   
-    
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .footer_section8 {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .footer_section8 > div {
-      margin: 10px 0;
-    }
-  }  
-.Contact_Us , .About_Us , .footer_Image{
-  text-decoration: none;
-  color: #0d0d0d;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
-     
-
-  
-  
-/* <================================================= footer styling End===================================================> */
-/* Back to Top Button */
-.back-to-top {
-
-  
-  width: 22vw;
-  text-align: right;
-  background-color: #0c078a;
-  color: #f5fd04;
-  text-decoration: none;
-  font-size: 1.2vw;
-  border-radius: 40vw;
- 
-  padding: 0.7vw 5vh;
-  font-weight: bolder;
-
- 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-/* Hover effect */
-.back-to-top:hover {
-  color: #fbff04;
-  background-color: #070707;
-  font-size: 1.4vw;
-  border-radius: 10vw;
-  box-shadow: 0 4px 6px rgba(109, 111, 112, 0.4);
-
-}
-
-
-/* <============================================> */
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-/* Individual Colors */
-.facebook { background-color: #1877F2; }
-.linkedin { background-color: #0A66C2; }
-.twitter { background-color: #1DA1F2; }
-.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5); }
-.whatsapp{background-color: #25D366; }
-
-
-
-.whatsapp:hover {
-  background-color: #128C7E;
-}
-
-/* Hover effect */
-.icon:hover {
-  transform: scale(1.15);
+.footer_section8 li:hover , .footer_section8 ul:hover  {
+  transform: scale(1.02);
   transition: all 0.3s ease;
 }
 
-.Get_a_Quote {
-  
-  width: 22vw;
-  background-color: #0c078a;
-  color: #f5fd04;
-  text-decoration: none;
-  font-size: 1.2vw;
-  border-radius: 2.5vw;
-  padding: 0.7vw 4vh;
-  font-weight: bolder;
-
-  margin-left: 20px ;
-  }
-
-  .Get_a_Quote:hover {
-    color: #fbff04;
-    background-color: #070707;
-    font-size:1.4vw;
-    border-radius: 2.8vw;
-    box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
-  
-  }
+      .Get_a_Quote {
+        background-color: #0c078a;
+        color: #f5fd04;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+      }
+      
+      .Get_a_Quote:hover {
+        background-color: #070707;
+        color: #fbff04;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      }
+      
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+      
+      .facebook { background-color: #1877F2; }
+      .linkedin { background-color: #0A66C2; }
+      .twitter { background-color: #1DA1F2; }
+      .instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5); }
+      .whatsapp { background-color: #25D366; }
+      
+      .icon:hover {
+        transform: scale(1.1);
+      }
+      
+      
+      .back-to-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: #0c078a;
+        color: #f5fd04;
+        padding: 10px 20px;
+        border-radius: 50%;
+        font-size: 20px;
+        z-index: 999;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .back-to-top:hover {
+        background-color: #070707;
+        color: #fbff04;
+      }
+      
+      .last_p {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .footer_section8 {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .footer_section8 > div {
+          max-width: 90%;
+        }
+      
+        .Get_a_Quote,
+        .back-to-top {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+      
+        .footer_section8 img {
+          max-width: 80px;
+        }
+      }
+      

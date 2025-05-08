@@ -17,7 +17,6 @@
     <!-- <========================Icon=================================================> -->
      <link rel="Icon" href="./images/globe icon.jpg">
 
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   </head>
 
@@ -27,7 +26,7 @@
   <body>
     <!-- <===================================Navigation Bar start===========================================================> -->
 
-    <nav class="navbar navbar-expand-lg bg-body-dark  .text-warning fixed-top" >
+ <nav class="navbar navbar-expand-lg bg-body-dark  .text-warning fixed-top" >
         <div class="container-fluid ">
             <a class="navbar-brand  mt-0  me-5  " href="#" style="font-style:bold;" >
                 <img class="imgNavbar" src="./images/logo2.png" alt="Logo" width="100" height="64" class="d-inline-block align-text-top ">
@@ -124,23 +123,43 @@
 
       <!-- ============================ carousles End ================================ -->
 
+      <!-- <================================== feedback button start ====================================================> -->
+    
+   <!-- Feedback Image -->
+     <a href="#">
+
+      <img  onclick="feedback()" class="feedback_btn" src="./images/feedback.png" class="img-thumbnail" alt="Feedback">
+  </a>
+
+<!-- Toast Message (Hidden by Default) -->
+<div id="toast" class="toast">Thanks for your feedback!</div> 
+
+  
+
+   
+     
+      <!-- <================================== feedback button End ====================================================> -->
+
+    
+  
+  
 
 <!-- <=======================================Heading  & Paragraph Start=======================================> -->
-<br><br><br><br>
+ <br><br><br><br>
       <section class="section1">
         <h1>
      Real Service, Real Business <br>---The leading network of freight forwarders---</h1> <br><br>
-        <p>Macca Frieght is a global high-quality freight forwarders community,<br> providing services include Commercial Opportunities Matching,<br> Financial Risk Protection,<br> Operation Efficiency Development and Marketing Promotion. <br> We aim to establish safe and secure trading cooperation environment <br> and help freight forwarding enterprises achieve sustained profitability.</p>
+        <p>Macca Frieght is a global high-quality freight forwarders community,<br> providing services include Commercial Opportunities Matching,<br> Financial Risk Protection,<br> Operation Efficiency Development and Marketing Promotion. <br> We aim to establish safe and secure trading cooperation environment <br> and help freight forwarding enterprises achieve sustained profitability.</p> -->
         
         <!-- add modal for pop up -->
         <div class="container mt-3">
-            <button class="back-to-top " type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#myModal">
+            <button class="readmore" type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#myModal">
             Read more...!
           </button>
-        </div>
+        </div> 
         
         <!-- The Modal -->
-        <div   class="modal" id="myModal">
+         <div   class="modal" id="myModal">
           <div style="background-color: #0c078a;  " class="modal-dialog">
             <div style="background-color: #0c078a;  " class="modal-content">
         
@@ -154,10 +173,9 @@
               <div style="background-color: #0c078a;  color: #f5fd04;" class="modal-body">
                 Thanks to its integration with Trimble Trust Center, Transporeon Visibility gives carriers the ability to automate their data sharing and network connectivity with shippers. The carrier portal is easy to set up and access, so carriers only need to use one visibility tool regardless of multiple shippers’ requirements.
         
-              </div>
-        
+              </div>        
               <!-- Modal footer -->
-              <div style="background-color: #0c078a;  " class="modal-footer">
+               <div style="background-color: #0c078a;  " class="modal-footer">
                 <button  style= "background-color: #f5fd04; color: #0c078a; font-weight: bold;" type="button" class="btn" data-bs-dismiss="modal">Close</button>
               </div>
         
@@ -176,7 +194,7 @@
 
        <br><br><br><br><br>
 <!-- ==============================Card section start======================================================> -->
-
+ 
 <div class="card-group " >
   <div class="card" >
     <img style="height: 300px;" src="./images/card1.jpg" class="card-img-top" alt="...">
@@ -208,7 +226,7 @@
 
 <!-- <=======================================Heading  & Paragraph Start section 2=======================================> -->
 
-<section class="section2">
+ <section class="section2">
   <div>
       <h1>Start to Finish: <br> Stress-Free <br> Transport Solutions  </h1><br>
       
@@ -224,10 +242,21 @@
   <div><img src="./images/cargo packing.jpeg" alt="">
   </div>
 </section>
- 
+
  <!-- <=======================================Heading  & Paragraph End=======================================> -->
 <br><br><br><br>
+<!-- <=======================================================weight functionality section 2 (a) ===========================start==============> -->
 
+<div class="container_weight">
+  <h2>Weight Converter</h2>
+
+  <label>Enter weight in KG:</label>
+  <input class="weight_input" type="number" id="kg" placeholder="0kg">
+
+  <p id="poundResult"></p>
+  <p id="ounceResult"></p>
+</div>
+<!-- <=======================================================weight functionality ===========================end==============> -->
 <!-- <=========================================================heading and Paragraph start ========================> -->
 
 <br><br><br><br><br>
@@ -245,8 +274,8 @@ Streamline your logistics process, ensure secure and timely delivery of your pro
 
 <!-- <============================= 12 Cards layout section======================================> -->
  
-            
-        <div class="d-flex flex-wrap justify-content-center border-0">
+             
+      <div class="d-flex flex-wrap justify-content-center border-0">
           <div class="card m-4" style="width: 22rem; background-color: black;">
               <img src="./images/cardimg1.jpg" class="card-img-top" alt="...">
               <div class="card-body" style="  color: #fffb05; background-color: black;">
@@ -359,13 +388,12 @@ Streamline your logistics process, ensure secure and timely delivery of your pro
 </div>
 
       
-      
-     
+       
  <!-- <============================= 12 Cards layout section END======================================> -->
 
  <!-- <===============================  Image Heading & Paragraph start=============================================> -->
 
-<section class="section4">
+ <section class="section4">
   <br><br><br><br><br><br><br><br><br>
  <div> <img src="./images/tech_world.jpg" alt="">
   <br><br>
@@ -376,12 +404,12 @@ Streamline your logistics process, ensure secure and timely delivery of your pro
     <br><br><br>
     <br><br><br>
     <br><br><br>
+    <br><br><br> <br>  <br><br><br>
     <br><br><br>
-    </section>
-
-
- <!-- <===============================  Image Heading & Paragraph End=============================================> -->
-  
+   
+    </section> 
+<!--  <===============================  Image Heading & Paragraph End=============================================> -->
+  <div><br><br><br><br></div>
  
  
  <!-- <================================shipping List Start=============================================> -->
@@ -533,71 +561,55 @@ Streamline your logistics process, ensure secure and timely delivery of your pro
 
 
 <!-- <===========================================footer (section 8) Start=============================================> -->
- <footer >
+<footer>
   <br><br><br><br>
   <div class="main_footer">
+    <div class="footer_section8">
+      <div>
+        <h6>
+          <a class="footer_Image" href="./index.html">
+            <img src="./images/logo2.png" alt=""> MACCA Freight System
+          </a>
+        </h6>
+        <p class="p_font">
+          MACCA Freight System is a global freight forwarding company offering end-to-end solutions backed by technology and expertise.
+        </p>
+      </div>
 
-  
-  <div class="footer_section8">
- 
-   <div>
-    <h6> <a class="footer_Image" href="./index.html"><img src="./images/logo2.png" alt=""> MACCA Freight System</a>
-  </h6>
-  
-  <p style="width: 350px;" class="p_font">MACCA Freight System is a global freight forwarding company offering end-to-end solutions backed by technology and expertise, including Transportation Services,  Contract Logistics, Customs Clearance,  Project Logistics and Fine Arts Logistics.</p>
- 
-   </div>
-   <div style="margin-left: 10vw; margin-top: 5px;">
-    <h5><a  class="About_Us" href="./Footer_items/About Us/about.html">About Us</a></h5>
-   
-   </div>
-   <div style="margin-top: 5px;">
-    <h5><a  class="Contact_Us" href="./Footer_items/Contact Us/Contact.html">Contact Us</a></h5>
-    <br>
-   
-   </div>
-   <div>
-    <br>
-    <a href="./Footer_items/Get a Quote/Quote.html" class="Get_a_Quote">Get a Quote </a><br>
-   </div>
-   <div>
-    <h5>Social Links</h5>
-    <br>
+      <div>
+        <h5><a class="About_Us" href="./Footer_items/About Us/about.html">About Us</a></h5>
+      </div>
+
+      <div>
+        <h5><a class="Contact_Us" href="./Footer_items/Contact Us/Contact.html">Contact Us</a></h5>
+      </div>
+
+      <div>
+        <a href="./Footer_items/Get a Quote/Quote.html" class="Get_a_Quote">Get a Quote</a>
+      </div>
+
+      <div>
+        <h5>Social Links</h5>
         <div class="social-icons">
-        <a href="https://facebook.com/YourPage" target="_blank" class="icon facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://linkedin.com/in/YourPage" target="_blank" class="icon linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://twitter.com/YourPage" target="_blank" class="icon twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://instagram.com/YourPage" target="_blank" class="icon instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://wa.me/923001234567" target="_blank" class="icon whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        
+          <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
-      </div>
-   
+    </div>
+
+    <a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <p class="last_p">© 2025 Freight Logistics. All rights reserved.</p>
   </div>
-<a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a><br>
-  <p class="last_p" > © 2025 freight Logistics. All rights reserved.
-    
-  </p>
-
-</div>
 </footer>
-</body>
-</html>
-
 
  <!-- <===========================================footer (section 7) End=============================================> -->
  
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="./app.js"></script>
 </body>
 </html>
 
