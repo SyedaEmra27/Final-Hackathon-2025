@@ -29,6 +29,29 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
     transition: all 0.5s ease;
 }
+/*navbar button styling export to Pakistan */
+#nav_btn_export{
+  width: 12vw;
+  background-color: #0c078a;
+  color: #f5fd04;
+  text-decoration: none;
+  font-size: 14px;
+  /* border-radius: 2.5vw; */
+  margin: 0 10px;
+  padding: 2px 5px;
+  font-weight: bolder;
+ 
+  }
+
+  #nav_btn_export:hover{
+    color: #fbff04;
+    background-color: #070707;
+    width: 13vw;
+    font-size:14px;
+    box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
+  
+  }
+
 
 /* <==========================================================colums statrt styling =============> */
 .newspaper {
@@ -53,29 +76,64 @@ h1{
 }
 /* <==============================================Blog styling End============================> */
 /* <========================================   QUOTE Styling start ==============================> */
+/* 
 
 
-.quote_div {
+ 
+
+/* Base Styles */
+ .quote_div1 {
   background-color: #8b8a7f;
-  width: 1000px;
-  text-align: left;
-  margin: 0 12vw;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   border-radius: 30px;
-
-
-
+  padding: 20px;
+  box-sizing: border-box;
 }
-.quote_div2{
 
-
-}
 .quote_div2 > p {
   font-size: 3vw;
   color: #070707;
   margin: 0 5vw;
+  line-height: 1.5;
+} */
+
+/* Responsive Adjustments */
+ @media(max-width: 768px) {
+  .quote_div1 {
+    padding: 15px;
+  }
 
 
+  .quote_div2 > p {
+    font-size: 4vw;
+    margin: 0 4vw;
+  }
 }
+
+@media (max-width: 542px) {
+  .quote_div1 {
+    padding: 10px;
+  }
+
+  .quote_div2 > p {
+    font-size: 5vw;
+    margin: 0 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote_div1 {
+    padding: 8px;
+  }
+
+  .quote_div2 > p {
+    font-size: 6vw;
+    margin: 0 2vw;
+  }
+}
+
 /* <========================================   QUOTE Styling End==============================> */
  .rounded_heading{
   font-size: 3vw;
@@ -99,7 +157,92 @@ h1{
   font-style: italic;
 
 }
+@media (max-width: 542px) {
+  .rounded_div_img {
+    width: 100%;
+    padding: 20px;
+    font-size: 4vw;
+    overflow-x: hidden;
+  }
 
+  .rounded_img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    clip-path: circle(50%);
+    shape-outside: none;
+    width: 80%;
+    height: auto;
+  }
+
+  .rounded_heading {
+    font-size: 6vw;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+}
+#readBtn{
+  color: #3c36e2;
+  text-decoration: underline;
+  font-size: 2vw;
+   background-color: #070707; 
+   border: none;
+
+
+}
+
+     /* <================================shipping List styling section5 start=============================================>  */
+     .section5_Heading{
+      color: #fffb05;
+      text-align: center;
+      font-family: Shipping2;
+    
+    }     
+     .section5{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 20px;
+        color: #fffb05;
+        
+       
+      }
+      
+.headline {
+        
+      font-style: bold;
+      }      
+      
+      .section5 >div {
+        
+        margin: 20px 25px 25px 0px;
+        padding: 0px 11px 11px 0px; 
+        
+      }
+      .section5 >div > ul >li {
+        list-style:square;
+        font-size: 1.5vw;
+      }
+      
+      /* hover start */
+      
+ 
+.section5_Heading:hover {
+  font-size: 2.6vw;
+   transition:  0.5s ease  ; 
+ transform: scale(1.05);
+
+}
+
+
+
+
+    /* <================================shipping List styling  section5 End=============================================>  */
 
 
 

@@ -29,6 +29,77 @@ nav {
     transition: all 0.5s ease;
 }
 
+/*navbar button styling export to Pakistan */
+#nav_btn_export{
+  width: 12vw;
+  background-color: #0c078a;
+  color: #f5fd04;
+  text-decoration: none;
+  font-size: 14px;
+  /* border-radius: 2.5vw; */
+  margin: 0 10px;
+  padding: 2px 5px;
+  font-weight: bolder;
+ 
+  }
+
+  #nav_btn_export:hover{
+    color: #fbff04;
+    background-color: #070707;
+    width: 13vw;
+    font-size:14px;
+    box-shadow: 0 1vh 2.5vh rgba(109, 111, 112, 0.4);
+  
+  }
+
+     /* <================================shipping List styling section5 start=============================================>  */
+     .section5_Heading{
+      color: #fffb05;
+      text-align: center;
+      font-family: Shipping2;
+    
+    }     
+     .section5{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 20px;
+        color: #fffb05;
+        
+       
+      }
+      
+.headline {
+        
+      font-style: bold;
+      }      
+      
+      .section5 >div {
+        
+        margin: 20px 25px 25px 0px;
+        padding: 0px 11px 11px 0px; 
+        
+      }
+      .section5 >div > ul >li {
+        list-style:square;
+        font-size: 1.5vw;
+      }
+      
+      /* hover start */
+      
+ 
+.section5_Heading:hover {
+  font-size: 2.6vw;
+   transition:  0.5s ease  ; 
+ transform: scale(1.05);
+
+}
+
+
+
+
+    /* <================================shipping List styling  section5 End=============================================>  */
 
 
 /* <================================================= footer styling Start===================================================> */
