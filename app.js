@@ -47,23 +47,21 @@ function feedback() {
 
 
 
-    // Input box ko get karo
-    let kgInput = document.getElementById("kg");
+       var kgInput = document.getElementById("kg");
 
-    // Jab user kuch likhe
-    kgInput.oninput = function() {
-      let kg = kgInput.value;
+        kgInput.oninput = function() {
+      var kg = kgInput.value;
 
-      // Agar input khali nahi hai
+      
       if (kg !== "") {
-        let pounds = kg * 2.2;
-        let ounces = kg * 35.27;
+        var pounds = kg * 2.2;
+        var ounces = kg * 35.27;
 
-        // Result show karo
+      
         document.getElementById("poundResult").innerText = "Pounds: " + pounds.toFixed(2);
         document.getElementById("ounceResult").innerText = "Ounces: " + ounces.toFixed(2);
       } else {
-        // Agar input khali ho to result hata do
+      
         document.getElementById("poundResult").innerText = "";
         document.getElementById("ounceResult").innerText = "";
       }
