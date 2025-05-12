@@ -153,14 +153,13 @@ header {
   }
 
 
+
 /* Iframe responsive */
 .location iframe {
   width: 100% !important;
   max-width: 100%;
-  height: auto;
-  display: block;
-}
-
+  height: 500px !important;
+  display: block;}
 /* Container divs of max width 100%  */
 .section6,
 .section7,
